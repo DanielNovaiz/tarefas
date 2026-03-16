@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    float salarioMinimo, kwGasto;
+    float custo100kw, custoKw, custoConsumo, custoDesconto;
+
+    printf("Digite o valor do salario minimo: ");
+    scanf("%f", &salarioMinimo);
+
+    printf("Digite a quantidade de kW gasto: ");
+    scanf("%f", &kwGasto);
+
+    // 100 kW custam 70% do salário mínimo
+    custo100kw = salarioMinimo * 0.7;
+
+    // valor de 1 kW
+    custoKw = custo100kw / 100;
+
+    // custo total do consumo
+    custoConsumo = custoKw * kwGasto;
+
+    // custo com 10% de desconto
+    custoDesconto = custoConsumo * 0.9;
+
+    printf("Custo por kW: R$ %.2f\n", custoKw);
+    printf("Custo do consumo: R$ %.2f\n", custoConsumo);
+    printf("Custo com desconto: R$ %.2f\n", custoDesconto);
+
+    return 0;
+}
