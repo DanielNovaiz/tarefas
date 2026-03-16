@@ -1,0 +1,23 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	const pi = 3.14159
+	const custoPorM2 = 100.0
+
+	var raio, altura float64
+
+	fmt.Scan(&raio)
+	fmt.Scan(&altura)
+
+	ac := pi * raio * raio
+	al := 2 * pi * raio * altura
+	at := 2*ac + al
+
+	custo := at * custoPorM2
+
+	fmt.Printf("O VALOR DO CUSTO E = %.2f\n", custo)
+}
