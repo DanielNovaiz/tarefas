@@ -1,0 +1,34 @@
+programa {
+  funcao inicio() {
+    inteiro ingressos, testes, i
+    real per_P, per_G, per_A, per_C, renda_jogo, renda_acumulada = 0.0
+
+    escreva("QUANTOS JOGOS QUER SIMULAR? ")
+    leia(testes)
+
+    para (i = 1; i <= testes; i++) {
+      escreva("\n--- DADOS DO JOGO ", i, " ---")
+      escreva("\nINGRESSOS VENDIDOS: ")
+      leia(ingressos)
+      
+    
+      escreva("PORCENTAGEM POPULAR: ")
+      leia(per_P)
+      escreva("PORCENTAGEM GERAL: ")
+      leia(per_G)
+      escreva("PORCENTAGEM ARQUIBANCADA: ")
+      leia(per_A)
+      escreva("PORCENTAGEM CADEIRAS: ")
+      leia(per_C)
+     
+      
+      renda_jogo = ((per_P * 1 / 100) + (per_G * 5 / 100) + (per_A * 10 / 100) + (per_C * 20 / 100)) * ingressos
+      
+      renda_acumulada = renda_acumulada + renda_jogo
+
+      escreva("RENDA DO JOGO ", i, ": R$ ", renda_jogo, "\n")
+    } 
+
+    escreva("\n===============================")
+    escreva("\nRENDA TOTAL DE TODOS OS JOGOS: R$ ", renda_acumulada)
+    escreva("\n===============================\n")
