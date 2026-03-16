@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n1, n2, n3;
+    int numero;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &n1);
+
+    printf("Digite o segundo numero: ");
+    scanf("%d", &n2);
+
+    printf("Digite o terceiro numero: ");
+    scanf("%d", &n3);
+
+    if (n1 > 9 || n2 > 9 || n3 > 9 || n1 < 0 || n2 < 0 || n3 < 0) {
+        printf("DIGITO INVALIDO\n");
+        return 0;
+    }
+
+    numero = n1 * 100 + n2 * 10 + n3;
+
+    printf("%d, %d\n", numero, numero * numero);
+
+    return 0;
+}
