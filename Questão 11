@@ -1,0 +1,11 @@
+programa {
+  funcao inicio() {
+    real n1
+    escreva("DIGITE O NÚMERO:\n ")
+    leia(n1)
+    se(n1 % 3 == 0 e n1 % 5 == 0)
+    escreva("Seu número é divisivel ")
+    senao
+    escreva("Seu número não é divisivel ")
+  }
+}
