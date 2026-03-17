@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+import "math"
+
+func main() {
+    var aresta, altura, volume, area float64
+    fmt.Println("Escreva o comprimento da aresta e a altura da pirâmide\n ")
+    fmt.Scan(&aresta)
+    fmt.Scan(&altura)
+    
+    area = (3 * (aresta * aresta) * math.Sqrt(3)) / 2
+    volume = (1.0 / 3.0) * area * altura
+    
+    fmt.Printf("O volume da pirâmide é: %.2f metros cúbicos", volume)
+    
+    
+}
