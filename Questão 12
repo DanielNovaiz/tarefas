@@ -1,0 +1,13 @@
+package main 
+import "fmt"
+func main () {
+    var horas, total_valor int
+    fmt.Println("Digite a quantidade de Horas usadas ")
+    fmt.Scan(&horas)
+    if horas >= 3 {
+        total_valor = 10 * ((horas / 3) + 1)
+    } else {
+        total_valor = (horas + 1) * 5
+    }
+    fmt.Println("O Valor a pagar é: ", total_valor)
+}
