@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+var salario, salario2 float32
+
+fmt.Println("Escreva o seu salário ")
+fmt.Scan(&salario)
+if salario <= 300.00 {
+    salario2 = salario + (salario * 0.3)
+}else {
+salario2 = salario + (salario * 0.5)
+}
+fmt.Printf("O salario reajustado é:R$%2f\n", salario2)
+
+}
