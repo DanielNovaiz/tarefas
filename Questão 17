@@ -1,0 +1,20 @@
+package main
+import "fmt"
+
+func main() {
+	var n1, n2 int
+fmt.Println("Escreva o número e a quantidade de números da sequência ")
+fmt.Scan(&n1)
+fmt.Scan(&n2)
+if n1 % 2 == 0 {
+for i := 0; i < n2; i++{
+	fmt.Printf("%d ", n1+(i * 2))
+}
+	fmt.Println()
+	
+}else{
+	fmt.Println("Número ìmpar ")
+
+	
+}
+}
