@@ -1,0 +1,10 @@
+package main
+import f "fmt"
+
+func main() {
+    var n1 int
+    f.Println("digite o número\n ")
+    f.Scan(&n1)
+   f.Println("O antecessor de", n1, "é ", (n1 - 1))
+   f.Println("O sucessor de", n1, "é", (n1 + 1))
+}
