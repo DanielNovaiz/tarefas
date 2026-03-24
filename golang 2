@@ -1,0 +1,23 @@
+package main
+import f "fmt"
+
+func main() {
+    var n1 int
+     var condicao string
+    
+    f.Println("escreva o numero ")
+    f.Scan(&n1)
+    if n1 > 0 {
+        condicao = "Positivo"
+    } else if n1 < 0 {
+        condicao =" Negativo"
+    } else {
+        condicao = "neutro"
+    }
+if n1 % 2 == 0 {
+    f.Println("O número é ", condicao, "e par! ")
+} else {
+    f.Println("O número é ", condicao, "e ímpar! ")
+}
+ 
+}
