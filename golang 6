@@ -1,0 +1,10 @@
+package main
+import f "fmt"
+
+func main() {
+    var n1, n2 float32
+    f.Println("Digite o valor ")
+    f.Scan(&n1)
+   n2 = n1 + (n1 * 0.05)
+    f.Println("Com o reajuste de 5%, o valor total é", n2)
+}
