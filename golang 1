@@ -1,0 +1,18 @@
+package main
+import f "fmt"
+
+func main() {
+    var n1, n2, n3, n4 float32
+  f.Println("Digite os dois números para a comparar\n ")
+ f.Scan(&n1, &n2)
+ f.Println("Digite o Terceiro número\n ")
+ f.Scan(&n3)
+ n4 = n1 + n2
+ if n4 < n3 {
+     f.Println("O terceiro número é maior que a soma dos dois primeiros")
+ } else if n4 > n3 {
+     f.Println("o terceiro número é menor que a soma dos dois primeiros")
+ } else {
+ f.Println("o terceiro número é igual a soma dos dois primeiros")
+ }
+}
