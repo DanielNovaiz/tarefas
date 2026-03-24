@@ -1,0 +1,15 @@
+package main
+import f "fmt"
+
+func main() {
+    var n1, n2, n3 float32
+    f.Println("digite os dois números\n ")
+    f.Scan(&n1, &n2)
+    if n1 == n2 {
+        n3 = n1 + n2
+        f.Println("A soma dos dois números é", n3)
+    } else {
+        n3 = n1 * n2
+        f.Println("a multiplicação dos dois números é", n3)
+    }
+}
