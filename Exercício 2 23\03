@@ -1,0 +1,11 @@
+package main
+
+import f "fmt"
+
+func main() {
+    var nota1, nota2, media float32
+    f.Println("DIgite as notas do aluno ")
+    f.Scan(&nota1, &nota2)
+    media = ((nota1 * 2) + (nota2 * 3)) / 5
+  f.Println("A media é", media)
+}
