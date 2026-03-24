@@ -1,0 +1,11 @@
+package main
+import f "fmt"
+
+func main() {
+    var sal_minimo, sal_usuario, sal_equivalente float32
+    sal_minimo = 1293.20
+    f.Println("Digite seu salário ")
+    f.Scan(&sal_usuario)
+    sal_equivalente = sal_usuario / sal_minimo
+    f.Println("Seu salario equivale a", sal_equivalente, "salarios minimos")
+}
