@@ -1,0 +1,17 @@
+package main
+import "fmt"
+ 
+ func main() {
+     var n, n1 int
+     fmt.Println("Digite o número")
+     fmt.Scan(&n)
+    fmt.Println("Digite o divisor")
+   fmt.Scan(&n1)
+   if n % n1 == 0 {
+       div := n / n1
+       fmt.Println(n, "é divisível por", n1, "e o resultado é", div)
+       
+   } else {
+        fmt.Println(n, "não é divisível por", n1)
+   }
+ }
