@@ -1,0 +1,35 @@
+func main() {
+    const senhaValida = "senha123"
+    const chaveValida = 777
+    const chaveValidaADM = 757575
+
+    var senhaDigitada string
+    var chaveDigitada int
+
+    fmt.Print("Digite a senha: ")
+    fmt.Scan(&senhaDigitada)
+
+    fmt.Print("Digite a chave numérica: ")
+    fmt.Scan(&chaveDigitada)
+
+    temSenha := (senhaDigitada == senhaValida)
+    temChave := (chaveDigitada == chaveValida)
+    temChaveADM := (chaveDigitada == chaveValidaADM)
+
+    if temSenha && temChaveADM {
+        fmt.Println("--- ACESSO TOTAL ---")
+        fmt.Println("Bem-vindo, Administrador.")
+    } else if temSenha && temChave {
+        fmt.Println("--- ACESSO TOTAL---")
+        fmt.Println("---Bem-vindo, Usuário---")
+    } else if temSenha || temChave {
+        fmt.Println("---ACESSO PARCIAL---")
+        fmt.Println("Você possui apenas uma das credenciais.")
+    }else if temChaveADM {
+         fmt.Println("---RECUPERAÇÃO---")
+         fmt.Println("Administrador, um e-mail de recuperação foi enviado ao endereço e-mail da intituição")
+    } else {
+        fmt.Println("--- ACESSO NEGADO ---")
+        fmt.Println("Credenciais incorretas.")
+    }
+}
