@@ -1,0 +1,20 @@
+package main
+import "fmt"
+ 
+ func main() {
+     var n1, n2, soma int
+fmt.Println("Digite o primeiro número \n")
+fmt.Scan(&n1)
+fmt.Println("Digite o segundo número \n")
+fmt.Scan(&n2)
+soma = n1 + n2
+if soma > 20 {
+    var soma2 int
+    soma2 = soma + 8
+    fmt.Println(soma2)
+} else {
+    var soma3 int
+    soma3 = soma - 5
+    fmt.Println(soma3)
+}
+}
