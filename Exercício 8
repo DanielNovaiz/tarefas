@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+    var A int
+
+    fmt.Print("Digite o número: ")
+    fmt.Scan(&A)
+    if A > 20 && A < 90 {
+        fmt.Println("Está na faixa de valores")
+    } else {
+        fmt.Println("Não está na faixa de valores")
+    }
+}
