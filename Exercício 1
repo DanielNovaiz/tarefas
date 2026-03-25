@@ -1,0 +1,13 @@
+package main
+import "fmt"
+ 
+ func main() {
+     var n int
+fmt.Println("Digite o número \n")
+fmt.Scan(&n)
+if n % 2 == 0 {
+    fmt.Println("É par")
+}  else { 
+fmt.Println("É ímpar")
+}
+}
