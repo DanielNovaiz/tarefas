@@ -1,0 +1,19 @@
+package main
+import (
+    "fmt"
+ "math"
+ )
+ 
+ func main() {
+     var n float64
+     fmt.Println("Digite o número")
+     fmt.Scan(&n)
+     if n >= 0 {
+         var raiz float64
+         raiz = math.Sqrt(n)
+         fmt.Println(raiz)
+     } else {
+         n1 := n * n
+         fmt.Println(n1)
+     }
+ }
