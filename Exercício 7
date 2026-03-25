@@ -1,0 +1,45 @@
+package main
+
+import "fmt"
+
+func main() {
+    var A, B, C int
+    var MAIOR, INTER, MENOR int
+
+    fmt.Print("Digite o primeiro número: ")
+    fmt.Scan(&A)
+    fmt.Print("Digite o segundo número: ")
+    fmt.Scan(&B)
+    fmt.Print("Digite o terceiro número: ")
+    fmt.Scan(&C)
+    if A >= B && A >= C {
+        MAIOR = A
+        if B >= C {
+            INTER = B
+            MENOR = C
+        } else {
+            INTER = C
+            MENOR = B
+        }
+    } else if B >= A && B >= C {
+        MAIOR = B
+        if A >= C {
+            INTER = A
+            MENOR = C
+        } else {
+            INTER = C
+            MENOR = A
+        }
+    } else {
+        MAIOR = C
+        if A >= B {
+            INTER = A
+            MENOR = B
+        } else {
+            INTER = B
+            MENOR = A
+        }
+    }
+
+    fmt.Printf("Maior: %d, Intermediário: %d, Menor: %d\n", MAIOR, INTER, MENOR)
+}
