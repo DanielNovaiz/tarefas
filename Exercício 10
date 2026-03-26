@@ -1,0 +1,35 @@
+package main
+import "fmt"
+
+func main() {
+    var destino, tipo, valor_viagem int
+    fmt.Println("Digite o número correspondente ao destino da viagem;1 para norte, 2 para nordeste, 3 para centroeste e 4 para sul")
+    fmt.Scan(&destino)
+    fmt.Println("Digite o número correspondente ao tipo da viagem;1 para ida, 2 para ida e volta")
+    fmt.Scan(&tipo)
+    if destino == 1 && tipo == 1 {
+        valor_viagem = 500
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else if destino == 1 && tipo == 2 {
+        valor_viagem = 900
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else if destino == 2 && tipo == 1 || destino == 3 && tipo == 1 {
+        valor_viagem = 350
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else if destino == 2 && tipo == 2 {
+        valor_viagem = 650
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else if destino == 3 && tipo == 2 {
+        valor_viagem = 600
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else if destino == 4 && tipo == 1 {
+        valor_viagem = 300
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else if destino == 4 && tipo == 2 {
+        valor_viagem = 550
+        fmt.Println("O valor da viagem é", valor_viagem, "reais")
+    } else {
+        fmt.Println("Valores inválidos")
+    }
+}
+  
