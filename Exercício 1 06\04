@@ -1,0 +1,33 @@
+ type Pessoa struct {
+     PesoIdeal float64
+     Nome string
+     Altura float64
+ }
+func main() {
+    var listaPessoas []Pessoa
+    for {
+        var nome string
+        fmt.Println("Digite o nome(ou FIM para sair) ")
+        fmt.Scan(&nome)
+    
+    if nome == "FIM" {
+        break
+    }
+    var altura float64
+    fmt.Println("Digite a altura ")
+    fmt.Scan(&altura)
+     
+     peso := 20 * ((altura * altura) / 10000)
+     
+ novaPessoa := Pessoa {
+     Nome: nome,
+     Altura: altura,
+     PesoIdeal: peso,
+     
+ }
+ listaPessoas = append(listaPessoas, novaPessoa)
+    } 
+    for _, p := range listaPessoas {
+    fmt.Printf("Nome %s | Altura %.2f | Peso Ideal %.2f kg\n ", p.Nome, p.Altura, p.PesoIdeal)
+}
+}
