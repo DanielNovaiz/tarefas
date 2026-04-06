@@ -1,0 +1,18 @@
+package main
+
+import f "fmt"
+
+func main() {
+    var n [5]int
+    soma := 0
+
+    f.Println("Escreva os cinco valores:")
+
+   
+    for i := 0; i < len(n); i++ {
+        f.Scan(&n[i])
+        soma += n[i]
+    }
+  
+    f.Printf("A soma destes valores é: %d\n", soma)
+}
