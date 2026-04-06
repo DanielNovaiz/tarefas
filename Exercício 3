@@ -1,0 +1,14 @@
+package main
+
+import f "fmt"
+
+func main() {
+    var n [10] float64
+    for i := 0; i  <= 9; i++ {
+         f.Println("Digite o", i+1, "valor ")
+         f.Scan(&n[i])
+    }
+         for i := 9; i >= 0; i-- {
+             f.Println(n[i])
+         }
+    }
