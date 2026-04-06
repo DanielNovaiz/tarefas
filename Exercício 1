@@ -1,0 +1,19 @@
+package main
+import "fmt"
+
+func main() {
+    var nota1, nota2, nota3 float64
+    fmt.Println("Escreva as notas dos 3 alunos ")
+    fmt.Scan(&nota1)
+    fmt.Scan(&nota2)
+fmt.Scan(&nota3)
+ notas := [3] float64{nota1, nota2, nota3}
+ media := (nota1 + nota2 + nota3) / 3
+for i, v := range notas {
+    if v > 6 {
+        fmt.Printf("A nota %d (%.2f) está acima da media 6\n", i+1, v)
+    }
+    
+}
+fmt.Println("A média geral foi ", media)
+}
