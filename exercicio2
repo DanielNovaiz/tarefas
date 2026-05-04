@@ -1,0 +1,31 @@
+package main 
+import "fmt"
+func main () {
+	vetor1 := make([]int, 10)
+	vetor2 := make([]int, 5)
+resultado1 := make([]int, 0)
+resultado2 := make([]int, 0)
+soma := 0
+fmt.Println("Digite o número do primeiro vetor")
+for i := 0; i < 10; i++ {
+	fmt.Scan(&vetor1[i])
+}
+fmt.Println("Digite o número do segundo vetor")
+ for i := 0; i < 5; i++ {
+	fmt.Scan(&vetor2[i])
+	soma += vetor2[i]
+ }
+ for _, v := range vetor1 {
+	if v % 2 == 0{
+
+		resultado1 = append(resultado1, soma + v)
+	} else {
+	
+
+			resultado2 = append(resultado2, soma + v)
+		}
+	}
+ 
+ fmt.Println("Resultado dos pares;", resultado1)
+ fmt.Println("Resultado dos impares;", resultado2)
+ }
