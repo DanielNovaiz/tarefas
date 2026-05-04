@@ -1,0 +1,16 @@
+package main
+import "fmt"
+func main() {
+	vetorFibonacci := make([]int, 50)
+	
+	for i := 0; i < 50; i++ {
+		if i == 0 {
+			vetorFibonacci[i] = 1
+		} else if i == 1 {
+			vetorFibonacci[i] = 1
+		} else {
+			vetorFibonacci[i] = vetorFibonacci[i-1] + vetorFibonacci[i-2]
+		}
+	}
+	fmt.Println("Vetor Fibonacci:", vetorFibonacci)
+}
