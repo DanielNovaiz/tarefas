@@ -1,0 +1,23 @@
+package main 
+import "fmt"
+func main () {
+	vetor_A := make([]int, 10)
+    fmt.Println("digite os numeros do vetor")
+	for i := 0; i < 10; i++ {
+		fmt.Scan(&vetor_A[i])
+	}
+	contagem := make(map[int]int)
+for _, num := range vetor_A {
+	contagem[num]++
+} 
+existeRepetido := false
+for num, count := range contagem {
+	if count > 1 {
+		fmt.Printf("O número %d se repete %d vezes\n", num, count)
+		existeRepetido = true
+	}
+}
+if !existeRepetido {
+	fmt.Println("Não existem números repetidos no vetor.")
+}
+}
