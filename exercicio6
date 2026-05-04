@@ -1,0 +1,10 @@
+package main
+import "fmt"
+func main() {
+	vetor := make([]int, 0, 100)
+	for i := 100; i >= 0; i-- {
+		vetor = append(vetor, i)
+	}
+	fmt.Println(vetor[0:99])
+
+}
