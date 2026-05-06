@@ -1,0 +1,19 @@
+package main
+import f "fmt"
+func main() {
+numeros := make([]int, 10)
+encontrou := false
+f.Println("Digite 10 números:")
+for i := range numeros {
+	f.Scan(&numeros[i])
+}
+f.Println("Números Superiores a 50")
+for i, v := range numeros {
+	if v > 50 {
+		f.Printf("Posição: %d, Valor: %d\n", i+1, v)
+		encontrou = true
+	} 
+}
+if !encontrou {
+	f.Println("Nenhum número superior a 50 foi encontrado.")
+}
